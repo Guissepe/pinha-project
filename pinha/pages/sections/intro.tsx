@@ -4,9 +4,6 @@ import {
     Text,
     Link,
     Flex,
-    Icon,
-    AspectRatio,
-    Img,
   } from "@chakra-ui/react";
   import React from "react";
   
