@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Head from 'next/head'
 
 export default function Social() {
     const [subscribers, setSubscribers] = useState(6000);
@@ -9,7 +10,11 @@ export default function Social() {
         return () => clearInterval(interval);
     }, []);
     return(
-        <h1>Subscribers: {subscribers}</h1>
+        <div> 
+            <title>Subscribers</title>
+            <h1>Subscribers: {subscribers}</h1>
+        </div>
+       
     );
 };
 

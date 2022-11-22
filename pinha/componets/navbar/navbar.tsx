@@ -7,10 +7,9 @@ function Navbar() {
     return(
 
         <Flex  alignItems="center" height="100hv" justifyContent="center">
-            <Flex direction="row" background="gray">        
-                        <Link href="/">
-                            <Button onClick={onToggle} border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">Home</Button>
-                        </Link>
+            <Flex direction="row" background="gray"> 
+
+                        <Button onClick={onToggle} border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">A random button Here</Button>
                         <Slide direction='bottom' in={isOpen} style={{ zIndex: 10 }}>
                             <Box
                             p='40px'
@@ -21,14 +20,19 @@ function Navbar() {
                             shadow='md'
                             >
                                 <Text>
-                                    HAHA YES, i added this here for absolute no reason at all :D
+                                    HAHA YES, i added this here for absolute no reason at all, even tho it is only activated after pressing the biggest button in the screen, and yes, it stays when you change pages.
                                 </Text>
                             </Box>
                         </Slide>
+
+                        <Link href="/">
+                            <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">Home</Button>
+                        </Link>       
+                        
                         <Link href="/social">
                             <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">social</Button>
                         </Link>                                      
-                        <Link href="/teamplatepage">
+                        <Link href="../teamplatepage">
                             <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">tamplates</Button>
                         </Link>                              
             </Flex>

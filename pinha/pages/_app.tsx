@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Navbar from '../componets/navbar/navbar'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-
+import { Footer } from '../componets/footer'
 
 
 const colors = {
@@ -21,8 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Navbar/>
       <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
+      <Component  {...pageProps} />
       </ChakraProvider>
+      <Footer/>
     </>
   )
 }
