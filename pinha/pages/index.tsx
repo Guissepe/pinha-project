@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import {  } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import { LandP } from './sections/Landpage';
+import HowWeWork from "./sections/examples";
+import { Cards } from "./sections/cards";
 
 export default function Home() {
   return (
-      <div >
-
-        <title>Created a Next App</title>
-        <h1>well, it is what it is</h1>
-      </div>
-        
-      
-      
+    <Box>
+      <LandP/>
+      <Cards/>
+      <HowWeWork/>
+    </Box>
   )
 }

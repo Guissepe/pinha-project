@@ -1,26 +1,29 @@
 import { Avatar } from "@chakra-ui/avatar";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Link, Button } from "@chakra-ui/react";
 import React from "react";
 import ManPortrait from "../assets/man-portrait1x1.jpg";
 
 export default function InfoCard() {
+
   return (
-    <Box w="full" px="40px" py="20px" bg="white">
+    <Box  w="full" px="40px" py="20px" bg="white">
       <Flex alignItems="center" pb="20px">
         <Box>
           <Heading fontSize={16} color="blue.900" mb="2px">
-            Zac Walker
+            Zac Yes
           </Heading>
           <Text fontSize={12} color="gray.500">
-            Founder of mock.io
+            Founder of yes
           </Text>
+            <Link href="/">
+              <Button>
+                <Text>
+                  Tamplate here
+                </Text>
+              </Button>
+            </Link>
         </Box>
       </Flex>
-      <Text color="blue.700" fontSize={14}>
-        "Exercitation incididunt incididunt officia velit ullamco nulla
-        reprehenderit labore ullamco. Consectetur laborum velit est magna veniam
-        id minim deserunt. Aliquip culpa nisi irure est sunt cillum duis."
-      </Text>
     </Box>
   );
 };
