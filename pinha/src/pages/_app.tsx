@@ -5,6 +5,11 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { Footer } from '../componets/footer'
 import UserIcon from '../componets/user/userbox'
 import Header from '../componets/header'
+import Link from 'next/link'
+import { PrismicProvider } from '@prismicio/react'
+import { PrismicPreview } from '@prismicio/next'
+import { repositoryName } from '../services/prismic'
+
 
 const colors = {
   brand: {
@@ -18,13 +23,18 @@ const theme = extendTheme({ colors })
 
 
 export default function App({ Component, pageProps }: AppProps) {
+
   return (
     <>
-      <Header/>
-      <ChakraProvider theme={theme}>
-      <Component  {...pageProps} />
-      </ChakraProvider>
-      <Footer/>
+    <PrismicProvider internalLinkComponent={Link}>
+      <PrismicPreview repositoryName={repositoryName}>
+        <Header/>
+          <ChakraProvider theme={theme}>
+            <Component  {...pageProps} />
+          </ChakraProvider>
+        <Footer/>
+      </PrismicPreview>
+    </PrismicProvider>
     </>
   )
 }

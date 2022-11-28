@@ -4,13 +4,14 @@ import { Box } from '@chakra-ui/react'
 import { LandP } from './sections/Landpage';
 import HowWeWork from "./sections/examples";
 import { Cards } from "./sections/cards";
+import { GetStaticProps } from 'next';
 
 export default function Home() {
   return (
-    <Box>
-      <LandP/>
-      <Cards/>
-      <HowWeWork/>
-    </Box>
+      <Box>
+        <LandP/>
+        <Cards/>
+        <HowWeWork/>
+      </Box>
   )
 }
