@@ -16,9 +16,12 @@ function Navbar() {
                         <Link href="../Social/social">
                             <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">social</Button>
                         </Link>                                      
-                        <Link href="../tamplate/teamplatepage">
+                        <Link href="../tamplate/tamplates">
                             <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">tamplates</Button>
-                        </Link>                              
+                        </Link>       
+                        {/* <Link href="../pagePrismic/sample">
+                            <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">Prismic</Button>
+                        </Link>                              */}
             </Flex>
         </Flex>
     );
