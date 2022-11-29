@@ -1,0 +1,16 @@
+{
+  "_cts": {
+    "hotbar": {},
+    "content": {
+      "title": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "Products": {}
+  }
+}

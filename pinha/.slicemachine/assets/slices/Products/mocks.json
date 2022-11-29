@@ -1,0 +1,26 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Sheet",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Ad nostrud nulla laborum Lorem esse aliquip quis pariatur ullamco quis sint.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "products"
+  }
+]
