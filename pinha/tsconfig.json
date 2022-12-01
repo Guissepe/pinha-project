@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./.slicemachine/prismicio.d.ts", "src/slices/index.ts", "src/slices/Products/index.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./.slicemachine/prismicio.d.ts", "src/slices/index.ts", "src/slices/Products/index.ts", "src/pages/pageP.js"],
   "exclude": ["node_modules"],
 }
 
