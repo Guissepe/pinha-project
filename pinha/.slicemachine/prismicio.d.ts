@@ -107,7 +107,58 @@ export interface HotbarDocumentDataMenuItem {
  * @typeParam Lang - Language API ID of the document.
  */
 export type HotbarDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HotbarDocumentData>, "hotbar", Lang>;
-export type AllDocumentTypes = ContentDocument | HotbarDocument;
+/** Content for Page documents */
+interface PageDocumentData {
+    /**
+     * Title field in *Page*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Link field in *Page*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.link
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    link: prismicT.LinkField;
+    /**
+     * Slice Zone field in *Page*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Page → Slice Zone*
+ *
+ */
+type PageDocumentDataSlicesSlice = ProductsSlice;
+/**
+ * Page document from Prismic
+ *
+ * - **API ID**: `page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
+export type AllDocumentTypes = ContentDocument | HotbarDocument | PageDocument;
 /**
  * Primary content in Products → Primary
  *
@@ -162,6 +213,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { ContentDocumentData, ContentDocumentDataSlicesSlice, ContentDocument, HotbarDocumentData, HotbarDocumentDataMenuItem, HotbarDocument, AllDocumentTypes, ProductsSliceDefaultPrimary, ProductsSliceDefault, ProductsSliceVariation, ProductsSlice };
+        export type { ContentDocumentData, ContentDocumentDataSlicesSlice, ContentDocument, HotbarDocumentData, HotbarDocumentDataMenuItem, HotbarDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, AllDocumentTypes, ProductsSliceDefaultPrimary, ProductsSliceDefault, ProductsSliceVariation, ProductsSlice };
     }
 }

@@ -17,6 +17,10 @@ const routes = [
     type: 'itemhotbar',
     path: '/hotbar/:uid',
   },
+  {
+    type: 'Page',
+    path: '/page/:uid',
+  },
 ]
 
 export const createClient = (config = {}) => {
