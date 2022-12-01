@@ -1,0 +1,30 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "content",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Dolor sunt culpa officia dolore elit cillum reprehenderit amet mollit ad voluptate incididunt.",
+        "spans": []
+      }
+    ],
+    "seo_description": [
+      {
+        "type": "paragraph",
+        "text": "Labore magna minim consectetur dolore.",
+        "spans": []
+      }
+    ],
+    "slices": []
+  }
+}

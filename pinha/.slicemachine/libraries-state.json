@@ -1,0 +1,84 @@
+{
+  "slices": {
+    "components": {
+      "products": {
+        "library": "slices",
+        "id": "products",
+        "name": "Products",
+        "description": "Products",
+        "model": {
+          "id": "products",
+          "type": "SharedSlice",
+          "name": "Products",
+          "description": "Products",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Products",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Sheet",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ad nostrud nulla laborum Lorem esse aliquip quis pariatur ullamco quis sint.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "products"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\Nathan\\Desktop\\Trabalho\\Project\\pinha\\slices\\Products\\default\\preview.png",
+            "width": 415,
+            "height": 415
+          }
+        }
+      }
+    }
+  }
+}
