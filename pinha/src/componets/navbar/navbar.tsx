@@ -9,23 +9,23 @@ function Navbar() {
     return(
         <Flex  alignItems="center" height="100hv" justifyContent="center">
             <Flex direction="row"> 
-                <Link href="/">
+                <Link href="../Home/Homepage">
                     <Button border="3px" padding="10" > Home </Button>
                 </Link>       
                 <Link href="../Social/social">
                     <Button border="3px" padding="10"> Pricing </Button>
                 </Link>                                      
-                <Link href="../tamplate/tamplates">
+                {/* <Link href="../tamplate/tamplates">
                     <Button border="3px" padding="10"> About Us </Button>
-                </Link>    
+                </Link>     */}
                 <Spacer paddingLeft="5vw"/>
 
                 <Flex>
-                    <Link href="../Social/social">
+                    {/* <Link href="../Social/social">
                         <Button border="3px" padding="10"> Pricing </Button>
-                    </Link>                                      
+                    </Link>                                       */}
                     <Link href="../tamplate/tamplates">
-                        <Button _hover={{ background: "#C8A027" }} padding="10" background="#EBC142" borderColor="#EBC142"  borderStyle="solid"> About Us </Button>
+                        <Button _hover={{ background: "#C8A027" }} border="3px" padding="10" background="#EBC142" borderColor="#EBC142"  borderStyle="solid"> About Us </Button>
                     </Link>    
                 </Flex>                          
             </Flex>
