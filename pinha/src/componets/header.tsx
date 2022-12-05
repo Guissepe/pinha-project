@@ -8,6 +8,8 @@ import {
     Link,
     Flex,
   } from "@chakra-ui/react";
+  import Continue from "../componets/Buttons/Continue"
+
 
 
 export default function Header() {
@@ -16,7 +18,7 @@ export default function Header() {
         <Box>
             <Flex p="10" px="250">
                 <Navbar/>
-                <UserIcon/>
+                <Continue/>
             </Flex>
         </Box>
 

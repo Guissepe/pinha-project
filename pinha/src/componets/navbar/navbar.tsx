@@ -1,31 +1,35 @@
 import React from "react";
 import Link from "next/link";
-import { Flex, Button, Text, useDisclosure, Slide, Box } from '@chakra-ui/react'
+
+
+
+import { Flex, Button, Text, useDisclosure, Slide, Box, Spacer } from '@chakra-ui/react'
 
 function Navbar() {
-    
     return(
-
         <Flex  alignItems="center" height="100hv" justifyContent="center">
-            <Flex direction="row" background="gray"> 
+            <Flex direction="row"> 
+                <Link href="/">
+                    <Button border="3px" padding="10" > Home </Button>
+                </Link>       
+                <Link href="../Social/social">
+                    <Button border="3px" padding="10"> Pricing </Button>
+                </Link>                                      
+                <Link href="../tamplate/tamplates">
+                    <Button border="3px" padding="10"> About Us </Button>
+                </Link>    
+                <Spacer paddingLeft="5vw"/>
 
-                        <Link href="/">
-                            <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">Home</Button>
-                        </Link>       
-                        
-                        <Link href="../Social/social">
-                            <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">social</Button>
-                        </Link>                                      
-                        <Link href="../tamplate/tamplates">
-                            <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">tamplates</Button>
-                        </Link>       
-                        <Link href="../pageP">
-                            <Button border="3px" borderColor="black" borderStyle="solid" padding="10" fontFamily="sans-serif">Prismic</Button>
-                        </Link>                             
+                <Flex>
+                    <Link href="../Social/social">
+                        <Button border="3px" padding="10"> Pricing </Button>
+                    </Link>                                      
+                    <Link href="../tamplate/tamplates">
+                        <Button _hover={{ background: "#C8A027" }} padding="10" background="#EBC142" borderColor="#EBC142"  borderStyle="solid"> About Us </Button>
+                    </Link>    
+                </Flex>                          
             </Flex>
         </Flex>
     );
-
 }
-
 export default Navbar

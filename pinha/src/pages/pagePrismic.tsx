@@ -12,7 +12,6 @@ export const getStaticProps = async () => {
         }
     }
 }
-
 const Page = ({page}) => {
     return(
         <SliceZone slices={page.data.slices} components={components}/>
