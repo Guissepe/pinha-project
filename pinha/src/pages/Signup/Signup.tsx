@@ -15,7 +15,7 @@ export default function Pricing() {
                     Build your dream Website with simplicity
                  </Text>
                  <Box  paddingLeft="12%" >
-                    <Link href="">
+                    <Link href="/Signup/Register/Register">
                         <Button>
                             <Text>Sign up with Google</Text>
                         </Button>
@@ -24,13 +24,13 @@ export default function Pricing() {
                 
 
                  <Flex>
-                 <Link href="">
+                 <Link href="/Signup/Register/Register">
                     <Button>
                         <Text>Sign up with Google</Text>
                     </Button>
                  </Link>
                  
-                 <Link href="">
+                 <Link href="/Signup/Register/Register">
                     <Button>
                         <Text>Sign up with Apple</Text>
                     </Button>
