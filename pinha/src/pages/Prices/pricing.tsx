@@ -1,4 +1,3 @@
-
 import { Flex, Text, Box} from '@chakra-ui/react'
 import Standard from "../../componets/Plans/standard";
 import Teams from "../../componets/Plans/teams";
@@ -6,7 +5,9 @@ import Ultimate from "../../componets/Plans/ultimate";
 
 export default function Pricing() {
     return(
+        
         <Box>
+            
             <Flex>
                 <Standard/>
                 <Teams/>

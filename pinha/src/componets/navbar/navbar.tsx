@@ -8,21 +8,26 @@ function Navbar() {
     return(
         <Flex  alignItems="center" height="100hv" justifyContent="center">
             <Flex direction="row"> 
-                <Link href="../Home/Homepage">
+                <Link href="/Home/Homepage">
                     <Button border="3px" padding="10" > Home </Button>
                 </Link>   
-                <Link href="../Prices/pricing">
+                <Link href="/Prices/pricing">
                     <Button border="3px" padding="10" > Pricing </Button>
                 </Link>    
-                <Link href="../About/AboutUs">
+                <Link href="/About/AboutUs">
                     <Button border="3px" padding="10"> About Us</Button>
                 </Link>
 
                 <Spacer paddingLeft="5vw"/>
-                <Link href="../About/AboutUs">
+                <Link href="/Signup/Login/Login">
                     <Button border="3px" padding="10"> Login </Button>
                 </Link>
-                <GetStarted/>                                       
+                <Spacer paddingLeft="2vw"/>
+                <Link href="/Signup/Signup">
+                    <GetStarted/>
+                </Link>
+               
+                                                       
             </Flex>
         </Flex>
     );
