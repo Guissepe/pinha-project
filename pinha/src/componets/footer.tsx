@@ -1,10 +1,9 @@
-import { Box, Heading, Button, Text, Flex, Spacer, Image} from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, Spacer, Image} from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
-
 export const Footer = () => {
   return (
-    <Box w="full" bg="gray.900" px="18vw" py="1px">
+    <Box w="full" bg="gray.900" px="18vw" py="1px" fontFamily="Sora">
       <Heading
         color="#000000"
         letterSpacing="6px"

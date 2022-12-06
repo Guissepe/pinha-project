@@ -1,10 +1,10 @@
 import React from "react";
-import { Flex, Button, Text, useDisclosure, Slide, Box, Spacer } from '@chakra-ui/react'
+import { Flex, Button, Text} from '@chakra-ui/react'
 
 
  function GetStarted() {
     return(
-        <Button _hover={{ background: "#C8A027" }} background="#EBC142">
+        <Button borderRadius="3" _hover={{ background: "#C8A027" }} background="#EBC142">
             <Text>Get Started</Text>
         </Button>
     )

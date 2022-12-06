@@ -1,14 +1,14 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Navbar from '../componets/navbar/navbar'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { Footer } from '../componets/footer'
-import UserIcon from '../componets/user/userbox'
 import Header from '../componets/header'
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'
 import { repositoryName } from '../services/prismic'
+
+
 
 const colors = {
   brand: {

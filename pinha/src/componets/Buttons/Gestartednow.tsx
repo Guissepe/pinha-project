@@ -1,6 +1,5 @@
 import React from "react";
-import { Flex, Button, Text, useDisclosure, Slide, Box, Spacer } from '@chakra-ui/react'
-
+import { Button, Text} from '@chakra-ui/react'
 
 function GetStartedNow() {
     return(

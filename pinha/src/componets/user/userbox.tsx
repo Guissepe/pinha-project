@@ -1,22 +1,18 @@
 import React from "react";
 import {
     Box,
-    Heading,
-    Text,
     Slide,
     Flex,
     Image,
     Button,
     useDisclosure
   } from "@chakra-ui/react";
-  import InfoCard from "../infocard";
 
 export default function UserIcon() {
     const { isOpen, onToggle } = useDisclosure()
     return(
         <Box>
             <Flex>
-                
             <Button 
             height="50px" 
             width="50px" 
@@ -37,9 +33,7 @@ export default function UserIcon() {
                     bg='teal.500'
                     rounded='md'
                     shadow='md'
-                    
                     >
-                        <InfoCard/>
                     </Box>
                 </Slide>
             </Flex>
