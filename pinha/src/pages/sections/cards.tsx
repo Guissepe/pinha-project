@@ -1,6 +1,6 @@
 import { Box, Grid, Heading } from "@chakra-ui/react";
 import React from "react";
-import InfoCard  from "../../componets/infocard";
+
 
 export const Cards = () => {
   return (
@@ -9,12 +9,6 @@ export const Cards = () => {
         The chosen one have spoken
       </Heading>
       <Grid templateColumns="repeat(3, 1fr)" gap="60px">
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
-        <InfoCard />
       </Grid>
     </Box>
   );

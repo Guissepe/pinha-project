@@ -1,9 +1,9 @@
 import React from "react";
-import { Flex, Text, Box, Image } from '@chakra-ui/react'
+import { Flex, Text, Box, Image, Spacer} from '@chakra-ui/react'
 import GetStarted from "../../componets/Buttons/Getstarted";
 import Contact from "../../componets/Buttons/ContactUsSimple";
 import GetStartedNow from "../../componets/Buttons/Gestartednow";
-
+import Slider from "../../componets/Carousel/Carousel";
 
 
 function HomePage() {
@@ -17,11 +17,15 @@ function HomePage() {
             </Text>
             <Flex>
                 <GetStarted/>
+                <Spacer p="3vw"/>
                 <Contact/>
                 <Text>
                     slider here
                 </Text>
+                
+                
             </Flex>
+            <Slider/>
             <Box>
                 <Text>
                 Working with great costumers
