@@ -1,41 +1,29 @@
-import { Flex, Text, Box, Button} from '@chakra-ui/react'
+import { Flex, Text, Box, Button, Spacer} from '@chakra-ui/react'
 import Link from 'next/link'
 import { LinkBox } from '@chakra-ui/react'
+import Signup from '../../componets/Buttons/SignupButton'
+
 
 export default function Pricing() {
     return(
         
-        <Box paddingLeft="31vw" alignContent="center">
+        <Box textAlign="center" background="#000000" >
 
-                 <Text>
+                 <Text pt="30vw" paddingLeft="38vw" width="58vw" color="#ffffff" fontSize="3vw">
                  Sign In to 
                     Winnu
                  </Text>
-                 <Text>
+                 <Spacer p="2vw"/>
+                 <Text color="#ffffff">
                     Build your dream Website with simplicity
                  </Text>
-                 <Box  paddingLeft="12%" >
-                    <Link href="/Signup/Register/Register">
-                        <Button>
-                            <Text>Sign up with Google</Text>
-                        </Button>
-                    </Link>
+                 <Spacer p="2vw"/>
+                 <Box >
+                    <Signup provlink={'/Signup/Register/Register'} description={'Sign up with Google'}/>
                  </Box>
-                
-
-                 <Flex>
-                 <Link href="/Signup/Register/Register">
-                    <Button>
-                        <Text>Sign up with Google</Text>
-                    </Button>
-                 </Link>
-                 
-                 <Link href="/Signup/Register/Register">
-                    <Button>
-                        <Text>Sign up with Apple</Text>
-                    </Button>
-                 </Link>
-                 
+                 <Flex paddingLeft="35.5vw">
+                    <Signup provlink={'/Signup/Register/Register'} description={'Sign up with Google'}/>
+                    <Signup provlink={'/Signup/Register/Register'} description={'Sign up with Google'}/>
                  </Flex>
                  <Text>
                     By continuing, you agree to Winnu
