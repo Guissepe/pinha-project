@@ -8,12 +8,12 @@ function Standard() {
     return(
         <Box borderStyle="solid" borderBottomColor="#FFBDB4" border="2px" fontFamily="Sora">
             <Box borderStyle="solid" borderBottomColor="#FFBDB4" border="2px" >
-                <Text textAlign="center" height="5vw">
+                <Text fontSize="2.5vw" textAlign="center" height="5vw">
                     Standard
                 </Text>
             </Box>
             <Box textAlign="center" height="10vw" borderStyle="solid" borderBottomColor="#FFBDB4" border="2px">
-                <Text>
+                <Text fontSize="2.5vw">
                     Free
                 </Text>
                 <Text fontSize="1.7vw" width="24vw">

@@ -9,12 +9,12 @@ function Ultimate() {
     return(
         <Box borderStyle="solid" borderColor="#FFBDB4" border="2px" fontFamily="Sora">
             <Box borderStyle="solid" borderColor="#FFBDB4" border="2px" >
-                <Text textAlign="center" height="5vw">
+                <Text fontSize="2.5vw" textAlign="center" height="5vw">
                     Ultimate
                 </Text>
             </Box>
             <Box textAlign="center" height="10vw" borderStyle="solid" borderColor="#FFBDB4" border="2px">
-                <Text>
+                <Text fontSize="2.5vw">
                     $15
                 </Text>
                 <Text fontSize="1.7vw" width="24vw">
