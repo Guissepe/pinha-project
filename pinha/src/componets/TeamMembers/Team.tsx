@@ -6,8 +6,8 @@ function TeamPicture(props: { source: string; description: string; position: str
     const Decription = String(props.description)
     const Position = String(props.position)
     return(
-        <Box textAlign="center" fontFamily="Sora">
-            <Box background="#433D39">     
+        <Box p="1vw" textAlign="center" fontFamily="Sora">
+            <Box background="#FFBDB4">     
                 <Box>
                     <Image src={ Source } maxWidth="104px"/>
                     <Text>

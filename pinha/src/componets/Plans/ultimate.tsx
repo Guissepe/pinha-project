@@ -3,8 +3,6 @@ import {Text, Box, Spacer, Flex} from '@chakra-ui/react'
 import GetStarted from "../Buttons/Getstarted";
 import Content from "./Text";
 
-
-
 function Ultimate() {
     return(
         <Box borderStyle="solid" borderColor="#FFBDB4" border="2px" fontFamily="Sora">
@@ -39,7 +37,6 @@ function Ultimate() {
                     </Flex>
             </Box>
         </Box>
-        
     )
 }
 
