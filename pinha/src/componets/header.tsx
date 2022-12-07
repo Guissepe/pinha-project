@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar2 from "./navbar/navbar";
+import Navbar from "./navbar/navbar";
 import {
     Box,
     Flex,
@@ -9,7 +9,7 @@ export default function Header() {
     return(
         <Box>
             <Flex p="10" px="250" fontFamily="Sora">
-                <Navbar2/>
+                <Navbar/>
             </Flex>
         </Box>
 

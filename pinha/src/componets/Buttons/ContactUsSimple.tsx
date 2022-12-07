@@ -1,14 +1,13 @@
 import React from "react";
-import { Flex, Button, Text, Image } from '@chakra-ui/react'
-
+import { Flex, Button, Text, Image, Box } from '@chakra-ui/react'
 
 function ContactSimple() {
     return(
-
-        <Button _hover={{ background: "#383838" }} background="#000000">
+        <Button _hover={{ background: "#cccccc" }} background="#ffffff">
             <Flex>
-                <Text>Contact Us</Text>
-                <Image width="20px" src="https://www.jquery-az.com/html/images/banana.jpg"/>
+                <Text >Contact Us</Text>
+                <Box padding="2vw"/>
+                <Image height="2vw" width="2vw" src="https://www.jquery-az.com/html/images/banana.jpg"/>
             </Flex>
         </Button>   
     )

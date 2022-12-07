@@ -8,8 +8,7 @@ function Slider() {
     return (
 
         <Box>
-            <Carousel showThumbs={false} showIndicators={true} showArrows={true} centerMode={true}>
-                    
+            <Carousel showThumbs={false} showIndicators={true} showArrows={true} centerMode={true}>  
                 <Box>
                     <Image alt="" src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTYSv-kmEqeAj6NRr09yPqvo3HGVdDsuw9ZGKRfpl9EtI6zttIJyRv7WSCMK_4eAsrm" />
                     <Text>Banana</Text>

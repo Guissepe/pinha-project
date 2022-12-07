@@ -3,14 +3,14 @@ import React from "react";
 import Link from "next/link";
 export const Footer = () => {
   return (
-    <Box w="full" bg="gray.900" px="18vw" py="1px" fontFamily="Sora">
+    <Box background="#000000" w="full" px="18vw" py="1px" fontFamily="Sora">
       <Heading
         color="#000000"
         letterSpacing="6px"
         alignContent="baseline"
         pb="10px"
       >
-        <Flex textAlign="justify" fontFamily="Sora">
+        <Flex  textAlign="justify" fontFamily="Sora">
           <Box fontSize="2vw" p='4vw' >
             <Text p="10">Support</Text>
             <Box fontSize="1vw" color="#E1B0A8">
