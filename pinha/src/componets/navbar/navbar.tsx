@@ -23,9 +23,7 @@ function Navbar() {
                     <Button border="3px" padding="10"> Login </Button>
                 </Link>
                 <Spacer paddingLeft="2vw"/>
-                <Link href="/Signup/Signup">
-                    <GetStarted/>
-                </Link>
+                <GetStarted/>
                
                                                        
             </Flex>
