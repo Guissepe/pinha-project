@@ -1,7 +1,9 @@
 import * as prismic from "@prismicio/client"
-import sm from "../../sm.json"
-import {components} from "../../slices"
+import sm from "../../../sm.json"
+import {components} from "../../../slices"
 import { SliceZone } from "@prismicio/react"
+import { Box } from "@chakra-ui/react"
+
 
 export const getStaticProps = async () => {
     const client = prismic.createClient(sm.apiEndpoint)
@@ -14,8 +16,10 @@ export const getStaticProps = async () => {
 }
 const Page = ({page}) => {
     return(
-        <SliceZone slices={page.data.slices} components={components}/>
+        <Box>
+            <SliceZone slices={page.data.slices} components={components}/>
+        </Box>
+        
     )
 }
-
 export default Page

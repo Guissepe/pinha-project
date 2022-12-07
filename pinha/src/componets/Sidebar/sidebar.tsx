@@ -1,13 +1,14 @@
 import { Box, Flex, Heading, Text, Link, Button } from "@chakra-ui/react";
 import React from "react";
 import UserIcon from "../user/userbox";
+import FrameText from "../../componets/Frame/frame";
 
 
 
 export default function SideBar() {
 
   return (
-    <Box>
+    <Box width="20%">
       <UserIcon/>
       <Text>
         Recent
@@ -22,6 +23,10 @@ export default function SideBar() {
       <Text>
         Teams
       </Text>
+      <Box pt="100%">
+        <FrameText/>
+      </Box>
+      
     </Box>
   );
 };

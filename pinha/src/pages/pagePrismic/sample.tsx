@@ -4,7 +4,7 @@ type PageParams = { uid: string }
 
 // ...
 
-export async function getStaticProps({
+export default async function getStaticProps({
   params,
   previewData,
 }: GetStaticPropsContext<PageParams>) {
